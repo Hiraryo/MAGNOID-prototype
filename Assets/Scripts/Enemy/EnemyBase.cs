@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-namespace Enemy
+namespace Scripts.Enemy
 {
     public abstract class EnemyBase : MonoBehaviour
     {
@@ -12,9 +12,10 @@ namespace Enemy
                 my.destination = target.transform.position;
             }
         }
-        virtual protected void Damage()
-        {
 
+        protected float Damage()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-namespace Enemy
+namespace Scripts.Enemy
 {
     [RequireComponent(typeof(NavMeshAgent))]
     public class EnemyPattern1 : EnemyBase
     {
         private GameObject _player;
         private NavMeshAgent _me;
+
         private void Start()
         {
             _player = GameObject.Find("Player");
